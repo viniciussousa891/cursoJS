@@ -1,8 +1,6 @@
 /* Função que retorna outra função */
 function criaMultiplicador(multiplicador) {
-    return function (n) {
-        return n * multiplicador;
-    };
+    return (n) => n * multiplicador;
 }
 /* Como a funçao criaMultiplicador retorna ua função, então as contasntes se tornam funções */
 const duplica = criaMultiplicador(2);
