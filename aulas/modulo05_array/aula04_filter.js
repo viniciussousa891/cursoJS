@@ -52,7 +52,7 @@ const nome5Letras = pessoas.filter(object => object.nome.length >= 5);
 
 const pessoas50Anos = pessoas.filter(object => object.idade > 50);
 
-const nometerminaComA = pessoas.filter(object => object.nome.toLocaleLowerCase().endsWith('a'));
+const nometerminaComA = pessoas.filter(object => object.nome.toLowerCase().endsWith('a'));
 
 
 console.log(nome5Letras);
