@@ -1,5 +1,8 @@
 const nomes = ['vincius','sousa','carvalho','francileide','givaldo','carvalho'];
 
+
+/* O retorno da função splice é um array com os valores removidos */
+/* Caso não tenha removidos, retornará um array vazio */
 /* 
 1ª Argumento: O indice do primeiro elemento que eu quero mexer 
 2ª Argumento: Quantos elemntos eu quero remover do meu array

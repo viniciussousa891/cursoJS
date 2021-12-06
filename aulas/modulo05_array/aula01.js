@@ -41,5 +41,5 @@ const nome = "Vinícius de Sousa Carvalho";
 const VetorNome = nome.split(' '); 
 /* Dividi o nome em partes toda vez que encontra um espaço */
 
-const nomeUnivod = VetorNome.join(' '); 
+const nomeUnido = VetorNome.join(' '); 
 /* Uni todos os valores transformando o array em uma string*/
