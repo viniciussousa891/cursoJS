@@ -18,5 +18,6 @@ function Pessoa(nome, sobrenome) {
 }
 
 const p1 = new Pessoa('Vinícius', 'Sousa');
-console.log(p1.sobrenome);
-p1.metodo();
+console.log(p1);
+p1.nome = "Danilo";
+console.log(p1);
