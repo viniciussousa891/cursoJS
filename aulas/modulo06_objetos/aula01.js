@@ -14,8 +14,7 @@ console.log(pessoa.nome);
 const chave = 'nome';
 console.log(pessoa[chave]);
 
-
-/* Criando novo array pelo new */
+/* Criando novo objeto pelo new */
 const pessoa02 = new Object();
 pessoa02.nome = 'Zuleide';
 pessoa02.sobrenome = 'Sousa';
@@ -23,7 +22,6 @@ pessoa02.sobrenome = 'Sousa';
 const chave02 = 'sobrenome';
 console.log(pessoa02.nome);
 console.log(pessoa02[chave02]);
-
 
 /* Apagar uma chave */
 delete pessoa02.nome;
@@ -80,8 +78,6 @@ function criaPessoa(nome, sobrenome){
 
 const p1 = new criaPessoa("Vinícius", "Sousa");
 console.log(p1.nomeCompleto);
-
-
 
 /* Constructor function */
 function Pessoa(nome, sobrenome, idade) {
