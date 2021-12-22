@@ -21,9 +21,15 @@ function Pessoa(nome, sobrenome) {
     this.sobrenome = sobrenome;
 }
 
+// Ao fazer isso, eu atribuo o método ao prototipo. 
+// Dessa forma, cada instância não criará um novo método idêntico,
+// mas terá ele no seu proto
 Pessoa.prototype.nomeCompleto = () => this.nome + ' ' + sobrenome;
 
 
 // instância
 const pessoa1 = new Pessoa('Vinícius', 'Sousa');
 const pessoa2 = new Pessoa('Zuleide', 'Sousa');
+
+console.dir(pessoa1);
+console.dir(pessoa2);
