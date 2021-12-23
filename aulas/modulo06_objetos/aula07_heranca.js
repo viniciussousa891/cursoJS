@@ -10,12 +10,19 @@ Produto.prototype.desconto = function(quantia) {
 }
 
 function Camiseta(nome,preco,cor) {
-    Produto.call(this, nome, preco); // chamando uma função dentro de outra, permitindo pegar as Chaves como herança
+    Produto.call(this, nome, preco); 
+    // chamando uma função construtora dentro de outra, permitindo 
+    // pegar as Chaves como herança
     this.cor =  cor;
 }
+
+// Pegar os métodos dentro do prototype
 Camiseta.prototype = Object.create(Produto.prototype); 
-// Quando executa essa ação, a camiseta perde seu construtor e passa a 
-// ser o construtor de produto, pos isso devemos redefinir o construtor 
+// Criando o prototype de Produto dentro do Prototype de Camiseta
+
+
+// Quando executa essa ação, Camiseta perde seu construtor e passa a 
+// ser o construtor de Produto, por isso devemos redefinir o construtor 
 // de Camiseta na linha abaixo
 Camiseta.prototype.constructor = Camiseta;
 
