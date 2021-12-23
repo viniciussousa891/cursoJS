@@ -8,7 +8,7 @@ const objB = {
     //__proto__: objA
 };
 
-// Como fazer para o __proto__ de objA seja objA
+// Como fazer para o __proto__ de objB seja objA
 Object.setPrototypeOf(objB, objA);
 console.log(objB.chaveA)
 
