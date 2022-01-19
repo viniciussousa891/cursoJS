@@ -17,12 +17,7 @@ function esperaAi(msg, tempo){
 // Promise.all Promise.race Promise.resolve Promise.reject
 
 
-// Promise.all
-/*
-  O Promise.all é um método que recebe um array de promises
-  e retorna um unico resolve ou reject. A resposta retornada
-  será um array com todas as resolve dentro.
-*/
+
 
 const promises = [
   esperaAi('Promise 1', rand(1, 3)),
@@ -30,11 +25,19 @@ const promises = [
   esperaAi('Promise 3', rand(1, 5)),
 ];
 
-/* Promise.all(promises)
+// Promise.all
+/*
+  O Promise.all é um método que recebe um array de promises
+  e retorna um unico resolve ou reject. A resposta retornada
+  será um array com todas as resolve dentro.
+*/
+
+
+
+Promise.all(promises)
   .then((values) => {
     console.log(values);
   }).catch(error => console.log(error)) 
-*/
 
 
 
